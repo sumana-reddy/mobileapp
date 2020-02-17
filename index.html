@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Maitre D App</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="sumana.css">
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <h1>Maitre D</h1>
+        <div class="billForm" name="billForm" id="billForm">
+            <label>Total: </label><input type="number" name="totalIN" placeholder="Enter Total Here" id="totalIN">
+            <label>Rate: </label><input type="number" step="0.01" min="0" max="1" name="rateIN" placeholder="Enter Tip Percentage Here" style="height: 25px;" id="rateIN">
+            <div id="output-group">
+                <div class="outputlabel">Tip: </div><div class="outputText" id="Tip">$0</div>
+                <div class="outputlabel">Tax: </div><div class="outputText" id="Tax">$0</div>
+                <div class="outputlabel">Grand Total: </div><div class="outputText" id="Grand Total">$0</div>
+            </div>
+            <input type="submit" value="Calculate" name="submit" onclick="calculate()">
+        </form>
+    </body>
+</html>

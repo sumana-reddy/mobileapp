@@ -1,0 +1,57 @@
+body {
+    flex-basis: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h1 {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 48px;
+}
+.billForm {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 60%;
+    max-width: 480px;
+}
+.billForm >* {
+    margin: 5px;
+}
+label:first-of-type {
+    flex-basis: 25%;
+    order: 1;
+}
+input:first-of-type {
+    flex-basis: 70%;
+    order: 1;
+}
+input[type=number] {
+    border-radius: 6px;
+    border: solid rgb(126, 112, 112) 1px;
+    padding: 4px 8px;
+    box-sizing: border-box;
+}
+label, input {
+    flex-basis: 20%;
+    order: 3;
+}
+#output-group {
+    flex-basis: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    order: 2;
+}
+#output-group >* {
+    padding: 4px 0;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+}
+input[type=submit] {
+    flex-basis: 100%;
+    border: none;
+    font-size: 22px;
+    color: #9f4eb8;
+    background-color: bisque;
+}
