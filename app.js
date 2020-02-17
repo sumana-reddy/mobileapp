@@ -5,8 +5,9 @@ function calculate() {
     if (totalIn == "" || rateIn == "") {
         alert("Enter the ammount");
     }
-    document.getElementById("Tip").innerHTML = "$" + totalIn * rateIn;
-    document.getElementById("Tax").innerHTML = "$" + totalIn * 0.055;
-    document.getElementById("GrandTotal").innerHTML = "$" + (totalIn + (totalIn * rateIn) + (totalIn * 0.055));
+    document.getElementById("Tip").innerHTML = "$" + (totalIn * rateIn)/100;
+    document.getElementById("Tax").innerHTML = "$" +  5.5;
+    document.getElementById("Grand Total").innerHTML = "$" + (totalIn +((totalIn * rateIn)/100 )+ 5.5);
+  
     return false;
 }
